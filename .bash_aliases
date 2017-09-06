@@ -100,4 +100,4 @@ fi
 }
 
 # JUST FOR FUN :-)
-cat /dev/urandom | hexdump -C | grep "ca fe"       # Make yourserf look like a hacker
+alias hacker=cat /dev/urandom | hexdump -C | grep "ca fe"       # Make yourserf look like a hacker
