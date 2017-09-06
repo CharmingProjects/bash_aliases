@@ -18,7 +18,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias .3="cd ../../.."
 alias .4="cd ../../../.."
-alias -="cd -"
 alias g="cd /"
 
 # tar.gz
