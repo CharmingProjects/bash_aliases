@@ -60,6 +60,7 @@ alias vimprofile="sudo vim ~/.bash_profile && . ~/.bash_profile"
 
 alias vimphp="sudo vim /etc/php.ini"               # Find your php.ini first
 alias vimnginx="sudo vim /etc/nginx/nginx.conf"
+alias vimmy="sudo vim /etc/my.cnf"
 
 # Systemctl
 alias sc="systemctl"
