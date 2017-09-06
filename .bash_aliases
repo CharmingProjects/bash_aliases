@@ -83,7 +83,7 @@ alias a="clear && alias | more"
 # Extra
 alias ax="chmod a+x"                               # Make file executable
 alias now='date +%T'                               # Show time
-alias upload="sftp username@server.com:/path/to/upload/directory
+alias upload="sftp username@server.com:/path/to/upload/directory"
 
 # FUNCTIONS
 cls () { cd $@ && ls -a; }                         
