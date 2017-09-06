@@ -12,5 +12,5 @@ This is the list for the most usefull aliases and functions that can used by the
  
  To install this file into your CentOS7 bash profile, just use the code line below:
  
-    wget -P ~ "htts://github.com/CharmingProjects/bash_aliases/bash_aliases"
+    wget -P ~ "htts://github.com/CharmingProjects/bash_aliases/.bash_aliases"
 
