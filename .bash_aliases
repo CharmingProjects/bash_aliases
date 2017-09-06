@@ -20,6 +20,11 @@ alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias g="cd /"
 
+# Move to popular direcrtories
+alias bscript="cd /usr/local/sbin && ls"   # Show my bash scripts
+alias w="cd /var/www"
+cds () { cd /var/www/$1/html && ls -a; }     # Move to site directory
+
 # tar.gz
 alias tarc="tar czvf"                      # Create archive
 alias tarx="tar xzvf"                      # Extraxt archive
@@ -48,9 +53,12 @@ alias yp="yum provides"
 # Editor
 alias vim="sudo vim"
 alias vi="sudo vi"
+
 alias vimalias="sudo vim ~/.bash_aliases && . ~/.bash_aliases"
 alias vimbashrc="sudo vim ~/.bashrc && . ~/.bashrc"
 alias vimprofile="sudo vim ~/.bash_profile && . ~/.bash_profile"
+
+alias vimphp="vim /etc/php.ini"                    # Find your php.ini first
 
 # Systemctl
 alias sc="systemctl"
