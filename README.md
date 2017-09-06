@@ -1,4 +1,4 @@
-# The most perfect ~/.bash_aliases file
+# The most perfect `~/.bash_aliases` file
 
 This is the list for the most usefull aliases and functions that can used by the all type of IT-specialists.
   
@@ -10,7 +10,7 @@ This is the list for the most usefull aliases and functions that can used by the
        . ~/.bash_aliases
     fi 
  
- To install this file into your CentOS7 bash profile, just use the code line below:
+ To install this file into your CentOS7/RHEL/Fedora bash profile, just use the code line below:
  
     wget -P ~ "https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases" -O ~/.bash_aliases
 
