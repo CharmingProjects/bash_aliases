@@ -59,7 +59,7 @@ alias vimbashrc="sudo vim ~/.bashrc && . ~/.bashrc"
 alias vimprofile="sudo vim ~/.bash_profile && . ~/.bash_profile"
 
 alias vimphp="sudo vim /etc/php.ini"               # Find your php.ini first
-alias vimnginx="sudo vim /etc/nginx/nginx.conf"
+alias vimnginx="sudo vim /etc/nginx/nginx.conf && nginx -t"
 alias vimmy="sudo vim /etc/my.cnf"
 
 # Systemctl
@@ -70,6 +70,7 @@ alias screl="systemctl reload"
 alias scrst="clear && systemctl restart"
 alias scstp="clear && systemctl stop"
 alias scen="clear && systemctl enable"
+alisa scisen="systemctl is-enabled"
 alias scdis="clear && systemctl disable"
 alias sclist="clear && systemctl list-unit-files"  # List of services
 
@@ -97,6 +98,8 @@ alias upload="sftp username@server.com:/path/to/upload/directory"
 cls () { cd $@ && ls -a; }                         
 mcd () { mkdir -p "$1"; cd "$1";} 
 backup () { cp "$1"{,.bcup};}
+
+newbs () {cd /usr/local/sbin && touch $1 && chmod a+x $1 && sudo vim $1} # New Bash script
 
 psgrep () {
 if [ ! -z $1 ] ; then
