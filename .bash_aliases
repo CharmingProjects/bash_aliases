@@ -24,7 +24,7 @@ alias g="cd /"
 alias bscript="cd /usr/local/sbin && ls"   # Show my bash scripts
 alias w="cd /var/www"
 alias ngsa="cd /etc/nginx/sites-available && ls"
-cds () { cd /var/www/$1/www && ls -a; }   # Move to site directory
+cds () { cd /var/www/"$1"/www && ls -a; }  # Move to site directory
 
 # tar.gz
 alias tarc="tar czvf"                      # Create archive
