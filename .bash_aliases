@@ -33,9 +33,9 @@ alias tart="tar tzvf"                      # Show file list of archive
 # Confirmation required
 alias mv="mv -iv"
 alias cp="cp -iv"
-alias ln="ln -iv"
-alias rm="rm -riv"
-alias rmf="rm -rfiv"                       # Forced removing
+alias ln="sudo ln -iv"
+alias rm="sudo rm -riv"
+alias rmf="sudo rm -rfiv"                       # Forced removing
 
 # Bash update
 alias bau=". ~/.bash_aliases"
@@ -77,7 +77,7 @@ alias sclist="clear && systemctl list-unit-files"  # List of services
 # Systeminfo
 alias df="df -hPT | column -t"                     # Physical memory
 alias free="free -mth"                             # RAM
-alias path="echo -e ${PATH//:/\\n}"                # Nice $PATH output    
+alias path="echo $PATH | tr ":" "\n" | nl"         # Nice $PATH output    
 
 # Network
 alias ping="ping -c4"
