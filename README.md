@@ -1,6 +1,6 @@
 # The most perfect `~/.bash_aliases` file
 
-This is the list for the most usefull bash aliases and functions that can be used by the all types of IT-specialists.
+This is the list for the most usefull bash aliases and functions that can be used by web-developers and server administrators.
   
   All aliases were taken from a lot of web-sources and also created myself.
 
