@@ -103,7 +103,7 @@ cls () { cd $@ && ls -a; }
 mcd () { mkdir -p "$1"; cd "$1";} 
 backup () { cp "$1"{,.bcup};}
 
-newbs () { cd /usr/local/sbin && touch "$1" && chmod a+x "$1" && sudo vim "$1"} # New Bash script
+newbs () { cd /usr/local/sbin && touch "$1" && chmod a+x "$1" && sudo vim "$1"; } # New Bash script
 
 psgrep () {
 if [ ! -z $1 ] ; then
