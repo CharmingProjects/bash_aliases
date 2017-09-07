@@ -94,6 +94,9 @@ alias a="clear && alias | more"
 alias ax="chmod a+x"                               # Make file executable
 alias upload="sftp username@server.com:/path/to/upload/directory"
 
+# Update this file in your ~/.bash_aliases
+alias baload="wget -P ~ "https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases" -O ~/.bash_aliases && . ~/.bash_aliases"
+
 # FUNCTIONS
 cls () { cd $@ && ls -a; }                         
 mcd () { mkdir -p "$1"; cd "$1";} 
