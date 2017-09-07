@@ -28,14 +28,14 @@ cds () { cd /var/www/$1/html && ls -a; }   # Move to site directory
 # tar.gz
 alias tarc="tar czvf"                      # Create archive
 alias tarx="tar xzvf"                      # Extraxt archive
-alias tart="tar tzvf"                      # Show file list of archive
+alias tart="tar tzvf"                      # Show file list of an archive
 
 # Confirmation required
 alias mv="mv -iv"
 alias cp="cp -iv"
 alias ln="sudo ln -iv"
 alias rm="sudo rm -riv"
-alias rmf="sudo rm -rfiv"                       # Forced removing
+alias rmf="sudo rm -rfiv"                  # Forced removing
 
 # Bash update
 alias bau=". ~/.bash_aliases"
@@ -60,6 +60,7 @@ alias vimprofile="sudo vim ~/.bash_profile && . ~/.bash_profile"
 
 alias vimphp="sudo vim /etc/php.ini"               # Find your php.ini first
 alias vimnginx="sudo vim /etc/nginx/nginx.conf && nginx -t"
+alias vimhttpd="sudo vim /etc/httpd/conf/httpd.conf && systemctl httpd configtest"
 alias vimmy="sudo vim /etc/my.cnf"
 
 # Systemctl
@@ -70,7 +71,7 @@ alias screl="systemctl reload"
 alias scrst="clear && systemctl restart"
 alias scstp="clear && systemctl stop"
 alias scen="clear && systemctl enable"
-alisa scisen="systemctl is-enabled"
+alias scisen="systemctl is-enabled"
 alias scdis="clear && systemctl disable"
 alias sclist="clear && systemctl list-unit-files"  # List of services
 
@@ -87,15 +88,15 @@ alias ipinfo="curl ifconfig.me && curl ifconfig.me/host" # Show your public IP a
 # Shortcuts
 alias q="exit"
 alias s="sudo"
-alias r="reset"
-alias a="clear && alias | more"
+alias a="clear && alias | less"
+alias ag="alias | grep"
 
 # Extra
 alias ax="chmod a+x"                               # Make file executable
 alias upload="sftp username@server.com:/path/to/upload/directory"
 
 # Update this file in your ~/.bash_aliases
-alias baload="wget -P ~ "https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases" -O ~/.bash_aliases && . ~/.bash_aliases"
+alias baload="wget -P ~ "https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases -O ~/.bash_aliases && . ~/.bash_aliases"
 
 # FUNCTIONS
 cls () { cd $@ && ls -a; }                         
