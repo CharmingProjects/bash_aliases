@@ -78,7 +78,7 @@ alias sclist="clear && systemctl list-unit-files"  # List of services
 # Systeminfo
 alias df="df -hPT | column -t"                     # Physical memory
 alias free="free -mth"                             # RAM
-alias path="echo $PATH | tr ":" "\n" | nl"         # Nice $PATH output    
+alias path="echo $PATH | tr ':' '\n' | nl"         # Nice $PATH output    
 
 # Network
 alias ping="ping -c4"
@@ -103,7 +103,7 @@ cls () { cd $@ && ls -a; }
 mcd () { mkdir -p "$1"; cd "$1";} 
 backup () { cp "$1"{,.bcup};}
 
-newbs () {cd /usr/local/sbin && touch $1 && chmod a+x $1 && sudo vim $1} # New Bash script
+newbs () { cd /usr/local/sbin && touch "$1" && chmod a+x "$1" && sudo vim "$1"} # New Bash script
 
 psgrep () {
 if [ ! -z $1 ] ; then
