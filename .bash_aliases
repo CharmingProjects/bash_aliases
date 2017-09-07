@@ -67,14 +67,14 @@ alias vimmy="sudo vim /etc/my.cnf"
 # Systemctl
 alias sc="systemctl"
 alias scsts="clear && systemctl status"
-alias scstt="clear && systemctl start"
+alias scstt="systemctl start"
 alias screl="systemctl reload"
-alias scrst="clear && systemctl restart"
-alias scstp="clear && systemctl stop"
-alias scen="clear && systemctl enable"
+alias scrst="systemctl restart"
+alias scstp="systemctl stop"
+alias scen="systemctl enable"
 alias scisen="systemctl is-enabled"
-alias scdis="clear && systemctl disable"
-alias sclist="clear && systemctl list-unit-files"  # List of services
+alias scdis="systemctl disable"
+alias sclist="systemctl list-unit-files | less"  # List of services
 
 # Systeminfo
 alias df="df -hPT | column -t"                     # Physical memory
