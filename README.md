@@ -10,7 +10,9 @@ This is the list for the most usefull aliases and functions that can used by the
        . ~/.bash_aliases
     fi 
  
- To install this file into your CentOS7/RHEL/Fedora bash profile, just use the code line below:
+ To install this file into your bash profile, just use the code line below:
  
-    wget -P ~ "https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases" -O ~/.bash_aliases
+    wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases -O ~/.bash_aliases && . ~/.bash_aliases
+ 
+ This ~/.bash_aliases file is going to update from time to time, so come over here sometimes!
 
