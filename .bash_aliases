@@ -23,7 +23,8 @@ alias g="cd /"
 # Move to popular direcrtories
 alias bscript="cd /usr/local/sbin && ls"   # Show my bash scripts
 alias w="cd /var/www"
-cds () { cd /var/www/$1/html && ls -a; }   # Move to site directory
+alias ngsa="cd /etc/nginx/sites-available && ls"
+cds () { cd /var/www/$1/www && ls -a; }   # Move to site directory
 
 # tar.gz
 alias tarc="tar czvf"                      # Create archive
@@ -100,8 +101,8 @@ alias baload="wget -P ~ 'https://raw.githubusercontent.com/CharmingProjects/bash
 
 # FUNCTIONS
 cls () { cd $@ && ls -a; }                         
-mcd () { mkdir -p "$1"; cd "$1";} 
-backup () { cp "$1"{,.bcup};}
+mcd () { sudo mkdir -p "$1"; cd "$1";} 
+backup () { sudo cp "$1"{,.backup};}
 
 newbs () { cd /usr/local/sbin && sudo touch "$1" && sudo chmod a+x "$1" && sudo vim "$1"; } # New Bash script
 
