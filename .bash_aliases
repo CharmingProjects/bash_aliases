@@ -89,8 +89,8 @@ alias ipinfo="curl ifconfig.me && curl ifconfig.me/host" # Show your public IP a
 # Shortcuts
 alias q="exit"
 alias s="sudo"
-alias a="clear && alias | less"
-alias ag="alias | grep"
+alias a="clear && alias | less"                    # Show list of all aliases
+alias ag="alias | grep"                            # Use this if you remember only a part of alias name
 
 # Extra
 alias ax="chmod a+x"                               # Make file executable
@@ -116,4 +116,4 @@ fi
 }
 
 # JUST FOR FUN :-)
-alias hacker='cat /dev/urandom | hexdump -C | grep "ca fe"'       # Make yourserf look like a hacker
+alias hacker='cat /dev/urandom | hexdump -C | grep "ca fe"'       # Make yourserf look like a hacker to noobies
