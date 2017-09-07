@@ -1,6 +1,6 @@
 # The most perfect `~/.bash_aliases` file
 
-This is the list for the most usefull aliases and functions that can used by the all type of IT-specialists.
+This is the list for the most usefull bash aliases and functions that can be used by the all types of IT-specialists.
   
   All aliases were taken from a lot of web-sources and also created myself.
 
@@ -10,7 +10,7 @@ This is the list for the most usefull aliases and functions that can used by the
        . ~/.bash_aliases
     fi 
  
- To install this file into your bash profile, just use the code line below:
+ To install this file into your bash profile, just use the code line below (!! it will rewrite all your own aliases !!):
  
     wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases -O ~/.bash_aliases && . ~/.bash_aliases
  
