@@ -63,6 +63,18 @@ alias vimnginx="sudo vim /etc/nginx/nginx.conf && nginx -t"
 alias vimhttpd="sudo vim /etc/httpd/conf/httpd.conf && systemctl httpd configtest"
 alias vimmy="sudo vim /etc/my.cnf"
 
+# Systemctl
+alias sc="systemctl"
+alias scsts="clear && systemctl status"
+alias scstt="systemctl start"
+alias screl="systemctl reload"
+alias scrst="systemctl restart"
+alias scstp="systemctl stop"
+alias scen="systemctl enable"
+alias scisen="systemctl is-enabled"
+alias scdis="systemctl disable"
+alias sclist="systemctl list-unit-files | less"  # List of services
+
 # Systeminfo
 alias df="df -hPT | column -t"                     # Physical memory
 alias free="free -mth"                             # RAM
