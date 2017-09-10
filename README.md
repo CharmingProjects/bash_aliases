@@ -10,9 +10,14 @@ This is the list for the most usefull bash aliases and functions that can be use
        . ~/.bash_aliases
     fi 
  
- To install this file into your bash profile, just use the code line below (!! it will rewrite all your own aliases !!):
+ To install this file into your bash profile, just use the code lines below (!! it will rewrite all your own aliases !!):
+ ## Installation for CentOS/RHEL/Fedora
  
-    wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases -O ~/.bash_aliases && . ~/.bash_aliases
+    wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases_rpm -O ~/.bash_aliases && . ~/.bash_aliases
+ 
+ ## Installation for Debian/Ubuntu/Mint
+ 
+    wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases_deb -O ~/.bash_aliases && . ~/.bash_aliases
  
  This ~/.bash_aliases file is going to update from time to time, so come over here sometimes!
 
