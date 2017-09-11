@@ -41,6 +41,7 @@ alias rmf="sudo rm -rfiv"                  # Forced removing
 # Bash update
 alias bau=". ~/.bash_aliases"
 alias bpu=". ~/.bash_profile"
+alias bru=". ~/.bashrc"
 
 # Yum
 alias yum="sudo yum"
