@@ -59,7 +59,7 @@ alias vimalias="sudo vim ~/.bash_aliases && . ~/.bash_aliases"
 alias vimbashrc="sudo vim ~/.bashrc && . ~/.bashrc"
 alias vimprofile="sudo vim ~/.bash_profile && . ~/.bash_profile"
 
-alias vimphp="sudo vim /etc/php.ini"               # Find your php.ini first
+alias vimphp="sudo vim /etc/php/7.0/fpm/php.ini"               # Find your php.ini first
 alias vimnginx="sudo vim /etc/nginx/nginx.conf && nginx -t"
 alias vimhttpd="sudo vim /etc/httpd/conf/httpd.conf && systemctl httpd configtest"
 alias vimmy="sudo vim /etc/my.cnf"
