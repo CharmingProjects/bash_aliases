@@ -96,8 +96,8 @@ alias ag="alias | grep"                            # Use this if you remember on
 # Firewall
 fcap () { sudo firewall-cmd --zone=public --permanent --add-port=$1; }      # Add new port
 fcrp () { sudo firewall-cmd --zone=public --permanent --remove-port=$1; }   # Remove new port
-fcas () { sudo firewall-cmd --zone=public --permanent --add-service=$1 }    # Add service
-fcrs () { sudo firewall-cmd --zone=public --permanent --remove-service=$1 } # Remove service
+fcas () { sudo firewall-cmd --zone=public --permanent --add-service=$1; }    # Add service
+fcrs () { sudo firewall-cmd --zone=public --permanent --remove-service=$1; } # Remove service
 alias fcla="firewall-cmd --list-all"
 alias fcls="firewall-cmd --list-services"
 
