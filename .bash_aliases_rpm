@@ -99,6 +99,8 @@ fcrp () { sudo firewall-cmd --zone=public --permanent --remove-port=$1; }   # Re
 fcas () { sudo firewall-cmd --zone=public --permanent --add-service=$1; }    # Add service
 fcrs () { sudo firewall-cmd --zone=public --permanent --remove-service=$1; } # Remove service
 
+alias fcla="firewall-cmd --list-all"
+alias fcls="firewall-cmd --list-services"
 
 # Extra
 alias ax="chmod a+x"                               # Make file executable
