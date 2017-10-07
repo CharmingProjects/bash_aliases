@@ -101,6 +101,7 @@ fcrs () { sudo firewall-cmd --zone=public --permanent --remove-service=$1; } # R
 
 alias fcla="firewall-cmd --list-all"
 alias fcls="firewall-cmd --list-services"
+alias fcrel="firewall-cmd --reload"
 
 # Extra
 alias ax="chmod a+x"                               # Make file executable
