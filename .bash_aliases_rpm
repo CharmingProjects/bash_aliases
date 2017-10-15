@@ -113,7 +113,7 @@ alias baload="wget -P ~ 'https://raw.githubusercontent.com/CharmingProjects/bash
 # FUNCTIONS
 cls () { cd $@ && ls -a; }                         
 mcd () { sudo mkdir -p "$1"; cd "$1";} 
-backup () { sudo cp "$1"{,.backup};}
+bcup () { sudo cp "$1"{,.bcup};}
 
 newbs () { cd /usr/local/sbin && sudo touch "$1" && sudo chmod a+x "$1" && sudo vim "$1"; } # New Bash script
 
