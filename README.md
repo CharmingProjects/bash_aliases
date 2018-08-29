@@ -10,7 +10,7 @@ This is the list for the most usefull bash aliases and functions that can be use
        . ~/.bash_aliases
     fi 
  
- To install this file into your bash profile, just use the code lines below (!! it will rewrite your own ~/.bash-aliases file !!):
+ To install this file into your bash profile, just use the code lines below (!! it will rewrite your own ~/.bash_aliases file !!):
 
     wget https://raw.githubusercontent.com/CharmingProjects/bash_aliases/master/.bash_aliases -O ~/.bash_aliases && . ~/.bash_aliases
  
